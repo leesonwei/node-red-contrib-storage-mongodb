@@ -7,7 +7,7 @@ const Settings = require('./models/settings');
 const Sessions = require('./models/sessions');
 const Library = require('./models/library');
 
-var mongoose_options = {user: "node-red", pass: "node-red...", autoCreate: true};
+var mongoose_options = {};
 
 var settings;
 var appname;
@@ -23,6 +23,7 @@ const mongoStorage = {
     }
 
     appname = settings.appname;
+    mongoose_options = settings.mongoose_options;
 
     return new Promise(function(resolve, reject){
       mongoose.connect(settings.mongoURI, mongoose_options)
