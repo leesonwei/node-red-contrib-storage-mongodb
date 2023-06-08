@@ -4,10 +4,10 @@
   "description": "A MongoDB Node-RED Storage Plugin",
   "repository": {
     "type": "git",
-    "url": "https://github.com/hardillb/node-red-contrib-storage-mongodb"
+    "url": "https://github.com/leeson.wei/node-red-contrib-storage-mongodb"
   },
-  "bugs": "https://github.com/hardillb/node-red-contrib-storage-mongodb/issues",
-  "main": "index.js",
+  "bugs": "https://github.com/leeson.wei/node-red-contrib-storage-mongodb/issues",
+  "main": "node-red-contrib-storage-mongodb.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -19,6 +19,6 @@
   "author": "hardillb@gmail.com",
   "license": "Apache-2.0",
   "dependencies": {
-    "mongoose": "^5.10.5"
+    "mongoose": "^6.11.1"
   }
 }
